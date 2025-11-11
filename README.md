@@ -1,3 +1,4 @@
+Took help from Copoilt.
 # Premier Bank - Flutter Mobile Banking Application# Mobile Banking App
 
 A modern, responsive mobile banking application built with Flutter, featuring a clean UI, smooth animations, and interactive elements.A Flutter mobile banking application that displays account information and transactions from JSON data.
@@ -464,4 +465,3 @@ All hover effects use this pattern:
 
 ---
 
-**Built with ❤️ using Flutter**
