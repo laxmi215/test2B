@@ -18,26 +18,26 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
+
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: stable
           cache: true
-      
+
       - name: Get dependencies
         run: flutter pub get
-      
+
       - name: Build web
         run: flutter build web --release --base-href "/test2B/"
-      
+
       - name: Add .nojekyll
         run: touch build/web/.nojekyll
-      
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
